@@ -23,13 +23,15 @@ line[num1] = '\0';
 string_long(errno, expansion, 10);
 new_buffer(line, expansion);
 new_buffer(line, info->get_line + num1 + 2);
-} else if (line[num1] == '$' && line[num1 + 1] == '$')
+}
+else if (line[num1] == '$' && line[num1 + 1] == '$')
 {
 line[num1] = '\0';
 string_long(getpid(), expansion, 10);
 new_buffer(line, expansion);
 new_buffer(line, info->get_line + num1 + 2);
-} else if (line[num1] == '$' && (line[num1 + 1] == ' '
+}
+else if (line[num1] == '$' && (line[num1 + 1] == ' '
 || line[num1 + 1] == '\0'))
 continue;
 else if (line[num1] == '$')

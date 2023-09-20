@@ -67,7 +67,7 @@ if (info->get_line[num1] == limiter[num2])
 counter++;
 }
 }
-info->tokens = malloc(counter * sizeof(char *));
+info->tokens = malloc(counter *sizeof(char *));
 if (info->tokens == NULL)
 {
 perror(info->name_projects);

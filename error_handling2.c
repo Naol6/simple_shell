@@ -84,5 +84,5 @@ while ('0' <= *strings && *strings <= '9' && *strings != '\0')
 number = (number * 10) + (*strings - '0');
 strings++;
 }
-return (number * sign);
+return (number *sign);
 }
